@@ -1,5 +1,5 @@
 import * as path from 'node:path'
-import { defineConfig } from 'rspress/config'
+import { defineConfig } from '@rspress/core'
 import { pluginPlayground } from '@rspress/plugin-playground'
 // const isDev = process.env.NODE_ENV === 'development'
 
@@ -59,7 +59,7 @@ export default defineConfig({
   },
   builderConfig: {
     output: {
-      sourceMap: true,
+      // sourceMap: true,
       assetPrefix: 'https://visactor.github.io/VSeed/',
     },
   },
