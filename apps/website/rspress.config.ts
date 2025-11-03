@@ -60,8 +60,8 @@ export default defineConfig({
   builderConfig: {
     tools: {
       bundlerChain(chain) {
-        chain.output.set('asyncChunks', true);
-      }
+        chain.output.set('asyncChunks', true)
+      },
     },
     output: {
       // sourceMap: true,
