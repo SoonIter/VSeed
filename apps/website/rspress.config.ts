@@ -58,6 +58,11 @@ export default defineConfig({
     exclude: ['components/**/*'],
   },
   builderConfig: {
+    tools: {
+      bundlerChain(chain) {
+        chain.output.set('asyncChunks', true);
+      }
+    },
     output: {
       // sourceMap: true,
       assetPrefix: 'https://visactor.github.io/VSeed/',
